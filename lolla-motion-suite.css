@@ -1,0 +1,67 @@
+
+/* LOLLA Motion Collection — original implementation of the nine approved motion ideas. */
+:root{--lolla-ease:cubic-bezier(.22,1,.36,1);--lolla-ink:#36293b;--lolla-rose:#c15185}
+html{scroll-padding-top:105px}
+.lolla-flip-interlude{position:relative;isolation:isolate;overflow:hidden;min-height:230px;padding:53px 20px 55px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:radial-gradient(ellipse 66% 85% at 50% 55%,#fff9fc 0%,#f7e8f1 70%,#f4e0ec 100%);border-top:1px solid #fff9;border-bottom:1px solid #fff9}
+.lolla-flip-interlude:before,.lolla-flip-interlude:after{content:"✧";position:absolute;color:#d98bb2;font:60px/1 Georgia;opacity:.65;pointer-events:none;animation:lolla-sway 8s ease-in-out infinite}
+.lolla-flip-interlude:before{left:13%;top:20%}.lolla-flip-interlude:after{right:14%;bottom:13%;animation-delay:-3s}
+.lolla-interlude-overline{font:800 10px/1.4 var(--sans,Arial);letter-spacing:2.2px;color:#b5688b;margin:0 0 12px}
+.lolla-flip-line{font:400 clamp(33px,5.6vw,76px)/1.12 var(--serif,Georgia);letter-spacing:-1.8px;color:var(--lolla-ink);margin:0;display:flex;align-items:baseline;justify-content:center;gap:.2em;flex-wrap:wrap}
+.lolla-rotator{position:relative;display:inline-block;vertical-align:baseline;min-width:6.7em;height:1.13em;line-height:1.13;perspective:800px;white-space:nowrap;color:#bc497d;text-align:left}
+.lolla-rotate-front,.lolla-rotate-next{position:absolute;inset:0;display:block;backface-visibility:hidden;transform-style:preserve-3d;transform-origin:50% 50%;will-change:transform,opacity}
+.lolla-rotate-front{transform:rotateX(0deg);opacity:1}
+.lolla-rotate-next{transform:rotateX(85deg);opacity:0}
+.lolla-rotator.is-turning .lolla-rotate-front{transform:rotateX(-86deg);opacity:0}
+.lolla-rotator.is-turning .lolla-rotate-next{transform:rotateX(0);opacity:1}
+.lolla-rotator .lolla-rotate-front,.lolla-rotator .lolla-rotate-next{transition:transform .72s var(--lolla-ease),opacity .32s ease}
+.lolla-interlude-note{font:600 13px/1.5 var(--sans,Arial);color:#947b8e;margin:17px 0 0}
+.lolla-motion-word{display:inline-block;white-space:pre;backface-visibility:hidden;will-change:opacity,transform,filter}
+.lolla-blur-text .lolla-motion-word{opacity:0;filter:blur(12px);transform:translateY(22px) scale(1.035);transition:opacity .75s ease,filter .95s ease,transform .95s var(--lolla-ease);transition-delay:calc(var(--word-index,0)*80ms)}
+.lolla-blur-text.is-motion-visible .lolla-motion-word{opacity:1;filter:blur(0);transform:translateY(0) scale(1)}
+.lolla-split-text .lolla-motion-word{opacity:0;transform:translate3d(0,21px,0) rotateX(-18deg);transition:opacity .78s ease,transform .87s var(--lolla-ease);transition-delay:calc(var(--word-index,0)*62ms)}
+.lolla-split-text.is-motion-visible .lolla-motion-word{opacity:1;transform:translate3d(0,0,0) rotateX(0)}
+/* Curated sticky-card stack — ordinary browsing remains available underneath. */
+.lolla-stack-section{position:relative;isolation:isolate;padding:100px 0 12px;background:linear-gradient(180deg,#fffafc,#f5eefb 46%,#fff4f9 100%);overflow:clip}
+.lolla-stack-heading{text-align:center;max-width:770px;margin:0 auto 55px}
+.lolla-stack-heading .overline{display:block;margin-bottom:13px}
+.lolla-stack-heading h2{font:400 clamp(44px,6vw,82px)/1 var(--serif,Georgia);letter-spacing:-2.5px;margin:0 0 17px;color:var(--lolla-ink)}
+.lolla-stack-heading h2 em{color:#c15185}
+.lolla-stack-heading p{margin:auto;max-width:500px;color:#877989;font-size:15px;line-height:1.8}
+.lolla-stack-runway{width:min(1060px,calc(100% - 54px));margin:0 auto;position:relative;padding-bottom:24px}
+.lolla-stack-card{position:sticky;top:calc(116px + var(--stack-index,0)*9px);height:min(56vw,465px);min-height:365px;margin-bottom:clamp(180px,29vh,290px);display:grid;grid-template-columns:1.12fr .88fr;overflow:hidden;isolation:isolate;border-radius:35px;border:2px solid #fff;box-shadow:0 20px 70px rgba(82,48,79,.12),0 2px 6px rgba(82,48,79,.06);background:var(--stack-bg);transform-origin:center top;will-change:transform}
+.lolla-stack-card:last-child{margin-bottom:50px}
+.lolla-stack-photo{position:relative;overflow:hidden;min-width:0;background:#f6e9ec}
+.lolla-stack-photo img{width:100%;height:100%;object-fit:cover;object-position:center 50%;display:block;transition:transform 1.1s var(--lolla-ease)}
+.lolla-stack-card:hover .lolla-stack-photo img{transform:scale(1.055)}
+.lolla-stack-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 63%,rgba(255,255,255,.08))}
+.lolla-stack-content{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(28px,4.4vw,64px);position:relative}
+.lolla-stack-content:before{content:"✿";position:absolute;right:5%;top:5%;font:72px/1 Georgia;color:#fff9;pointer-events:none}
+.lolla-stack-number{letter-spacing:1.9px;font-weight:800;font-size:10px;color:#98768c}
+.lolla-stack-content h3{font:400 clamp(37px,4.9vw,66px)/1.05 var(--serif,Georgia);letter-spacing:-1.6px;color:#473449;margin:21px 0 17px}
+.lolla-stack-content p{font-size:14px;line-height:1.8;color:#705b70;max-width:300px;margin:0 0 26px}
+.lolla-stack-open{min-height:47px;padding:10px 22px;border-radius:999px;background:#fffdfd;color:#aa4f80;border:1px solid #fff;font:800 12px var(--sans,Arial);box-shadow:0 7px 22px #7d506729;cursor:pointer;transition:transform .5s var(--lolla-ease),box-shadow .5s}
+.lolla-stack-open:hover{transform:translateY(-4px);box-shadow:0 12px 30px #7d50672f}
+/* Scroll-expanding editorial scene */
+.lolla-expand{height:143svh;min-height:770px;position:relative;isolation:isolate;background:#fff8fb}
+.lolla-expand-stick{height:calc(100svh - 96px);min-height:540px;position:sticky;top:96px;display:flex;align-items:center;justify-content:center;overflow:hidden;isolation:isolate}
+.lolla-expand-media{position:absolute;inset:0;overflow:hidden;border-radius:var(--expand-radius,45px);transform:scale(var(--expand-scale,.82));transform-origin:center center;will-change:transform,border-radius;box-shadow:0 25px 75px rgba(54,38,55,.16);background:#ede4ee}
+.lolla-expand-media img{width:100%;height:100%;object-fit:cover;object-position:center 46%;filter:brightness(.67) saturate(.92)}
+.lolla-expand-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(39,27,42,.44),transparent 82%)}
+.lolla-expand-copy{position:relative;z-index:2;color:white;text-align:center;padding:24px;max-width:760px;transform:translateY(var(--expand-text-y,30px));opacity:var(--expand-text-opacity,0);transition:none;text-shadow:0 5px 20px rgba(40,32,44,.25)}
+.lolla-expand-copy .overline{color:#fff;font-size:11px;letter-spacing:2px}
+.lolla-expand-copy h2{font:400 clamp(48px,7.2vw,106px)/.98 var(--serif,Georgia);letter-spacing:-3px;margin:23px 0}
+.lolla-expand-copy h2 em{color:#ffe0ed}
+.lolla-expand-copy p{font-size:clamp(13px,1.5vw,17px);margin:auto;max-width:440px;line-height:1.75}
+.lolla-expand-guide{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);z-index:3;font:800 9px var(--sans,Arial);letter-spacing:2px;color:#fff;white-space:nowrap;opacity:.8}
+@keyframes lolla-sway{0%,100%{transform:rotate(-12deg) translateY(0)}50%{transform:rotate(10deg) translateY(-7px)}}
+/* A gentle cursor-responsive glare, clipped within actual product imagery. */
+.product-visual{isolation:isolate}
+.product-visual:before{content:"";position:absolute;inset:0;z-index:4;border-radius:inherit;pointer-events:none;background:radial-gradient(circle at var(--glare-x,50%) var(--glare-y,50%),rgba(255,255,255,.42) 0,rgba(255,255,255,.13) 14%,transparent 45%);opacity:0;transition:opacity .3s ease;mix-blend-mode:screen}
+@media(hover:hover) and (pointer:fine){.product-visual:hover:before{opacity:.72}}
+/* Cute but restrained micro-sparks on key user actions. */
+.lolla-spark{position:fixed;z-index:999;left:0;top:0;width:7px;height:7px;border-radius:3px;pointer-events:none;background:var(--spark-color,#e38ab2);box-shadow:0 0 9px rgba(255,210,232,.9);transform:translate3d(var(--sx,0px),var(--sy,0px),0) scale(1);opacity:1;animation:lolla-spark-out .72s cubic-bezier(.1,.6,.1,1) forwards}
+@keyframes lolla-spark-out{to{transform:translate3d(calc(var(--sx) + var(--dx)),calc(var(--sy) + var(--dy)),0) rotate(120deg) scale(.2);opacity:0}}
+/* Allow browser's CSS transform animations to run: pointer parallax uses individual translate. */
+@media(max-width:900px){.lolla-stack-section{padding-top:75px}.lolla-stack-heading{margin-bottom:38px}.lolla-stack-card{height:370px;min-height:370px;top:83px}.lolla-flip-interlude{min-height:185px;padding:45px 16px}.lolla-expand{height:123svh;min-height:600px}.lolla-expand-stick{top:74px;height:calc(100svh - 74px);min-height:470px}}
+@media(max-width:680px){.lolla-flip-interlude{min-height:164px;padding:37px 15px}.lolla-interlude-overline{font-size:9px}.lolla-flip-line{font-size:clamp(32px,8.3vw,50px);letter-spacing:-1px}.lolla-rotator{min-width:6.5em}.lolla-interlude-note{font-size:11px}.lolla-stack-section{padding-top:67px}.lolla-stack-heading{padding:0 18px}.lolla-stack-heading h2{font-size:46px;letter-spacing:-1px}.lolla-stack-heading p{font-size:13px}.lolla-stack-runway{width:calc(100% - 26px)}.lolla-stack-card{height:460px;min-height:460px;grid-template-columns:1fr;grid-template-rows:55% 45%;border-radius:27px;top:77px;margin-bottom:170px}.lolla-stack-photo img{object-position:center 40%}.lolla-stack-content{padding:20px 27px}.lolla-stack-content h3{font-size:38px;margin:8px 0}.lolla-stack-content p{font-size:12px;line-height:1.55;margin-bottom:12px}.lolla-stack-open{min-height:38px;font-size:11px;padding:7px 16px}.lolla-stack-card:last-child{margin-bottom:26px}.lolla-expand{height:119svh;min-height:640px}.lolla-expand-stick{top:69px;height:calc(100svh - 69px);min-height:530px}.lolla-expand-copy h2{font-size:clamp(45px,11vw,67px);letter-spacing:-1.5px}.lolla-expand-media img{object-position:52% 50%}.lolla-expand-guide{bottom:20px;font-size:8px}}
+@media(prefers-reduced-motion:reduce){.lolla-flip-interlude:before,.lolla-flip-interlude:after,.lolla-spark{animation:none!important}.lolla-motion-word,.lolla-blur-text .lolla-motion-word,.lolla-split-text .lolla-motion-word{opacity:1!important;filter:none!important;transform:none!important;transition:none!important}.lolla-rotator .lolla-rotate-front,.lolla-rotator .lolla-rotate-next{transition:none!important}.lolla-stack-card,.lolla-expand-media,.lolla-expand-copy{transition:none!important;will-change:auto!important}}
