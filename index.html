@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e9e5f7">
+  <meta name="description" content="LOLLA Handmade by Kholod Mokhtar. A little world of quilted bags, joyful prints and matching sets, made with love.">
+  <meta property="og:title" content="LOLLA | Carry a little happiness">
+  <meta property="og:description" content="Pretty prints, puffy textures and handmade pieces for colourful girls.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/1558.webp">
+  <title>LOLLA — Carry a Little Happiness</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <script src="clouds-3d.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="top-ribbon"><div class="ribbon-track" aria-hidden="true"><span>✿ THE SOFT STUFF IS HERE ✿ MADE WITH LOVE & LITTLE DETAILS ✿ YOUR DAILY DOSE OF CUTE ✿</span><span>✿ THE SOFT STUFF IS HERE ✿ MADE WITH LOVE & LITTLE DETAILS ✿ YOUR DAILY DOSE OF CUTE ✿</span></div></div>
+<header class="header" id="top">
+  <div class="nav-pill">
+    <a class="site-logo" href="#top" aria-label="LOLLA home"><img src="assets/lolla-wordmark.png" alt="LOLLA"></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="#collection">The collection</a><a href="#patterns">Pretty prints</a><a href="#set-builder">Build a set</a><a href="#our-story">Our story</a></nav>
+    <div class="nav-tools"><a class="header-instagram" href="https://www.instagram.com/lollabykm/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">@lollabykm</a><button id="bagButton" class="bag-trigger" aria-label="Open shopping bag"><span>Bag</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><b id="bagCount">0</b></button><button id="menuButton" class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation"><a href="#collection">The collection</a><a href="#patterns">Pretty prints</a><a href="#set-builder">Build a set</a><a href="#our-story">Our story</a><a href="https://www.instagram.com/lollabykm/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></nav>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="sky-texture"></div>
+    <canvas id="lollaCloud3d" class="cloudscape-3d" aria-hidden="true"></canvas>
+    <div class="hero-aurora" aria-hidden="true"></div>
+    <img class="sky-puff sky-puff--left" src="assets/soft-cloud.svg" alt="" aria-hidden="true" decoding="async">
+    <img class="sky-puff sky-puff--right" src="assets/soft-cloud.svg" alt="" aria-hidden="true" decoding="async">
+    <img class="sky-puff sky-puff--low" src="assets/soft-cloud.svg" alt="" aria-hidden="true" decoding="async">
+    <div class="cloud cloud--one" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="cloud cloud--two" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="cloud cloud--three" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="cloud cloud--four" aria-hidden="true"><i></i><i></i><i></i></div>
+    <svg class="scribble scribble--sun" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"><circle cx="60" cy="60" r="24"/><path d="M60 3v18M60 99v18M3 60h18M99 60h18M20 20l13 13M87 87l13 13M20 100l13-13M87 33l13-13"/></g></svg>
+    <span class="hero-star star-one" aria-hidden="true">✳</span><span class="hero-star star-two" aria-hidden="true">✧</span><span class="hero-star star-three" aria-hidden="true">✦</span>
+    <div class="hero-layout container">
+      <div class="hero-copy">
+        <div class="hero-kicker"><span class="sparkle-icon">✿</span> WELCOME TO LOLLA'S LITTLE WORLD</div>
+        <h1 id="heroTitle">Carry a <em>little</em><br><span class="hero-last">happiness<span class="hero-heart">♡</span></span></h1>
+        <p>Colourful handmade bags for colourful girls. Puffy, pretty and stitched with a whole lot of love.</p>
+        <div class="hero-buttons"><a class="pill-button pill-button--berry" href="#collection">Shop the collection <span>↗</span></a><a class="pill-button pill-button--cream" href="#set-builder">Build your set <span>♡</span></a></div>
+        <div class="hero-bottom-note"><span class="note-line"></span><span>HANDMADE BY KHOLOD MOKHTAR</span></div>
+      </div>
+      <div class="hero-art" aria-label="Featured LOLLA handmade collection">
+        <div class="hero-art-backdrop"></div>
+        <figure class="hero-product-card hero-product-card--main"><img src="assets/1557.webp" alt="LOLLA strawberry and blueberry quilted tote displayed on a soft white rug" fetchpriority="high"><figcaption>STRAWBERRY FIELDS <span>♡</span></figcaption></figure>
+        <figure class="hero-product-card hero-product-card--small"><img src="assets/1551.webp" alt="LOLLA tulip print quilted makeup bag"><figcaption>the little things ✿</figcaption></figure>
+        <div class="hero-handmade-sticker" aria-hidden="true"><span>100%</span><strong>handmade</strong><span>with love ♡</span></div>
+        <span class="hero-flower" aria-hidden="true">✿</span>
+        <div class="tape tape--hero" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="hero-floor" aria-hidden="true"><div class="hero-floor__left"></div><div class="hero-floor__right"></div></div>
+    <div class="hero-cloud-horizon" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <a class="scroll-hint" href="#patterns">SCROLL FOR THE CUTE STUFF <span>↓</span></a>
+  </section>
+  <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>SOFT GIRL ENERGY ✿ HAPPY LITTLE THINGS ✿ MADE TO BE LOVED ✿ QUILTED WITH CARE ✿ </span><span>SOFT GIRL ENERGY ✿ HAPPY LITTLE THINGS ✿ MADE TO BE LOVED ✿ QUILTED WITH CARE ✿ </span></div></div>
+
+  <section class="patterns section-pad" id="patterns">
+    <div class="section-head center reveal"><span class="overline">01 / PICK A PERSONALITY</span><h2>Every print has a <em>personality.</em></h2><p>Florals, hearts, berries, and everything in between. Which one feels like you?</p></div>
+    <div class="pattern-row" id="patternRow">
+      <button class="pattern-card" data-pattern="tulip" style="--rot:-6deg;--paper:#f8dce9"><span class="pattern-card__image"><img src="assets/1551.webp" alt="Pink tulip floral quilted pattern"></span><span class="pattern-card__label">Tulip crush <b>↗</b></span></button>
+      <button class="pattern-card" data-pattern="hearts" style="--rot:4deg;--paper:#fff1e9"><span class="pattern-card__image"><img src="assets/1571.webp" alt="Red little hearts quilted pattern"></span><span class="pattern-card__label">Love notes <b>↗</b></span></button>
+      <button class="pattern-card" data-pattern="midnight" style="--rot:-3deg;--paper:#e1dcef"><span class="pattern-card__image"><img src="assets/1559.webp" alt="Midnight floral quilted pattern"></span><span class="pattern-card__label">Night blooms <b>↗</b></span></button>
+      <button class="pattern-card" data-pattern="berries" style="--rot:5deg;--paper:#e9edf6"><span class="pattern-card__image"><img src="assets/1556.webp" alt="Strawberry berry quilted pattern"></span><span class="pattern-card__label">Berry sweet <b>↗</b></span></button>
+      <button class="pattern-card" data-pattern="gingham" style="--rot:-4deg;--paper:#f6e1d8"><span class="pattern-card__image"><img src="assets/1581.webp" alt="Brown checked gingham quilted pattern"></span><span class="pattern-card__label">Picnic club <b>↗</b></span></button>
+    </div>
+    <div class="pattern-footer"><span>☁ TIP: CLICK ANY PRINT TO EXPLORE</span><span class="curved-arrow">⤴</span></div>
+  </section>
+
+  <section class="shop section-pad" id="collection">
+    <div class="shop-head container reveal"><div><span class="overline">02 / THE PRETTY LINEUP</span><h2>Currently <em>crushing on...</em></h2></div><p>Handmade favourites to take everywhere, collect forever, and match with every mood.</p></div>
+    <div class="shop-toolbar container"><div class="filter-list" aria-label="Filter products"><button data-filter="all" class="is-selected">All the cuties</button><button data-filter="tote">Tote bags</button><button data-filter="pouch">Makeup pouches</button><button data-filter="set">Matching sets</button><button data-filter="saved">♡ Saved</button></div><div class="shop-count"><span id="resultsCount">0</span> lovely pieces</div></div>
+    <div class="shop-grid container" id="productGrid"></div>
+    <div class="shop-bottom"><button class="outline-button" id="showMoreButton">See more pretty things <span>↗</span></button></div>
+  </section>
+
+  <section class="sticker-section" id="playground">
+    <div class="sticker-inner container">
+      <div class="sticker-caption reveal"><span class="overline">03 / THE STICKER CLUB</span><h2>Go on. <em>Play a little.</em></h2><p>Drag the cards, mix things up, and discover your next favourite. Just like a real sticker book.</p><div class="sticker-actions"><button id="shuffleStickers">↝ Shuffle stickers</button><button id="tidyStickers">▦ Tidy them up</button></div></div>
+      <div class="sticker-board" id="stickerBoard" aria-label="Interactive photo sticker board. Drag photos or tap to view a piece."><div class="board-grid"></div>
+        <button class="draggable-sticker sticker-1" data-product="berry-tote" aria-label="Explore Berry Picnic Tote" style="--tilt:-13deg"><img src="assets/1557.webp" alt="White quilted berry tote"><span>BERRY NICE ♡</span></button>
+        <button class="draggable-sticker sticker-2" data-product="midnight-tote" aria-label="Explore Midnight Bloom Tote" style="--tilt:11deg"><img src="assets/1559.webp" alt="Midnight floral tote"><span>FLOWER POWER ✿</span></button>
+        <button class="draggable-sticker sticker-3" data-product="heart-pouch" aria-label="Explore Love Notes Pouch" style="--tilt:-5deg"><img src="assets/1571.webp" alt="Red hearts makeup pouch"><span>LOVE NOTES ♡</span></button>
+        <button class="draggable-sticker sticker-4" data-product="tulip-pouch" aria-label="Explore Tulip Dream Pouch" style="--tilt:8deg"><img src="assets/1551.webp" alt="Tulip quilted makeup pouch"><span>SO PRETTY!</span></button>
+        <span class="board-heart" aria-hidden="true">♡</span><span class="board-sparkle" aria-hidden="true">✳</span><span class="board-arrow" aria-hidden="true">↝</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sets section-pad" id="set-builder">
+    <div class="container"><div class="section-head center reveal"><span class="overline">04 / YOUR VERY OWN LOLLA EDIT</span><h2>Better <em>together.</em> ♡</h2><p>Choose a print. Pick your matching pieces. Your perfect little duo is just a few taps away.</p></div>
+      <div class="set-builder-shell reveal"><div class="set-visual"><div class="set-orbit ring-one"></div><div class="set-orbit ring-two"></div><div class="set-visual__cloud" aria-hidden="true"></div><img id="setImage" src="assets/1558.webp" alt="Tulip collection tote and makeup bags"><div class="floating-set-tag">YOUR LITTLE <b>LOLLA SET</b><small id="setSelectionTag">TOTE + POUCH ♡</small></div><span class="set-visual-star" aria-hidden="true">✳</span></div>
+      <div class="set-controls"><div class="set-step">STEP 01 <span>♡</span> THE PRINT</div><h3>Choose your <em>mood</em></h3><div class="set-patterns" id="setPatternOptions"><button class="set-swatch is-selected" data-set="tulip"><span class="swatch-dot swatch-tulip"></span>Tulip dream</button><button class="set-swatch" data-set="midnight"><span class="swatch-dot swatch-midnight"></span>Midnight bloom</button><button class="set-swatch" data-set="hearts"><span class="swatch-dot swatch-hearts"></span>Love notes</button></div><div class="set-divider"></div><div class="set-step">STEP 02 <span>♡</span> THE PIECES</div><div class="set-choice"><label><input type="checkbox" id="setTote" checked><span class="custom-check">✓</span><span>Tote bag</span><span class="choice-doodle">↗</span></label><label><input type="checkbox" id="setPouch" checked><span class="custom-check">✓</span><span>Matching pouch</span><span class="choice-doodle">↗</span></label></div><p class="set-availability">Each piece is made by hand. Availability and prices are confirmed by LOLLA.</p><button id="askForSet" class="pill-button pill-button--berry set-submit">Ask about my set <span>↗</span></button></div></div>
+    </div>
+  </section>
+
+  <section class="story section-pad" id="our-story"><div class="story-grid container"><div class="story-images reveal"><div class="story-photo story-photo--main"><img src="assets/1553.webp" loading="lazy" alt="Handmade black floral tote bag showing its thoughtful inner pockets"></div><div class="story-photo story-photo--second"><img src="assets/1583.webp" loading="lazy" alt="Soft quilted pink handmade pouch and floral lining"></div><div class="story-doodle" aria-hidden="true">made with<br>♡</div></div><div class="story-copy reveal"><span class="overline">05 / A LITTLE EXTRA LOVE</span><h2>The magic's <em>in the making.</em></h2><p>Some things just feel different when they're handmade. Every LOLLA piece is carefully stitched by Kholod Mokhtar, from the soft quilted texture to the little pockets that keep your everyday treasures close.</p><div class="detail-icons"><div><span>✳</span><div><strong>Quilted comfort</strong><small>Soft, puffy textures you'll love</small></div></div><div><span>✿</span><div><strong>Playful prints</strong><small>A pattern for every personality</small></div></div><div><span>♡</span><div><strong>Handmade with care</strong><small>Thoughtful details in every piece</small></div></div></div><a href="https://www.instagram.com/lollabykm/" target="_blank" rel="noopener noreferrer" class="story-link">Come say hi on Instagram <span>↗</span></a></div></div></section>
+
+  <section class="love-note section-pad" id="reviews"><div class="container"><div class="section-head center reveal"><span class="overline">06 / LOVE NOTES FROM YOU</span><h2>Kind words, <em>happy hearts.</em></h2></div><div class="testimonial-card reveal"><span class="test-star test-star-left" aria-hidden="true">✳</span><span class="testimonial-kicker">A REAL CUSTOMER LOVE NOTE ♡</span><div class="testimonial-hearts" aria-label="Five hearts">♥ ♥ ♥ ♥ ♥</div><blockquote>“The photos were beautiful, but the real thing is even prettier. The quality, finish, and neat stitching are wonderful.”</blockquote><p>Customer feedback • translated from Arabic</p><span class="test-star test-star-right" aria-hidden="true">✿</span></div></div></section>
+
+  <section class="social section-pad"><div class="container"><div class="social-head reveal"><div><span class="overline">07 / THE LOLLA DIARY</span><h2>A little more <em>LOLLA</em> in your feed.</h2></div><a href="https://www.instagram.com/lollabykm/" class="outline-button" target="_blank" rel="noopener noreferrer">Follow @lollabykm <span>↗</span></a></div><div class="social-grid"><a href="https://www.instagram.com/lollabykm/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="assets/1562.webp" alt="Colourful LOLLA makeup bags in a basket"></a><a href="https://www.instagram.com/lollabykm/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="assets/1558.webp" alt="LOLLA matching tulip handbag set"></a><a href="https://www.instagram.com/lollabykm/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="assets/1567.webp" alt="Soft quilted makeup pouches and makeup brushes"></a><a href="https://www.instagram.com/lollabykm/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="assets/1560.webp" alt="Handmade strawberry print tote in garden"></a></div></div></section>
+
+  <section class="faq section-pad" id="faq"><div class="container faq-wrap"><div><span class="overline">08 / GOOD TO KNOW</span><h2>Little <em>questions?</em></h2><p>We've got some answers. And we're always a message away.</p><a class="faq-whatsapp" href="https://wa.me/201226396475?text=Hello%20LOLLA!%20I%20have%20a%20question." target="_blank" rel="noopener noreferrer">Chat with LOLLA ↗</a></div><div class="faq-items"><details><summary>How do I place an order? <span>+</span></summary><p>Add your favourites to the bag and send your selection through WhatsApp. We'll confirm the details with you there.</p></details><details><summary>Can I order a matching set? <span>+</span></summary><p>Yes! Try the Build Your Set section, choose a pattern and pieces, then send your request for availability.</p></details><details><summary>How much does each bag cost? <span>+</span></summary><p>Prices may vary by piece and design. Message LOLLA on WhatsApp for current prices and availability.</p></details><details><summary>Do you deliver? <span>+</span></summary><p>Ask LOLLA about delivery options, timing, and charges for your location before confirming your order.</p></details></div></div></section>
+</main>
+<footer class="footer"><div class="footer-clouds" aria-hidden="true"></div><div class="container"><div class="footer-head"><p>STAY CUTE. STAY COLOURFUL.</p><h2>See you on the <em>pretty side!</em> <span>♡</span></h2></div><div class="footer-main"><div class="footer-brand"><img src="assets/lolla-logo.png" alt="LOLLA Handmade by Kholod Mokhtar"><p>Handmade bags, little treasures, and a whole lot of heart.</p></div><div class="footer-links"><span>EXPLORE</span><a href="#collection">Shop all</a><a href="#patterns">The prints</a><a href="#set-builder">Build a set</a><a href="#our-story">Our story</a></div><div class="footer-links"><span>LET'S BE FRIENDS</span><a href="https://www.instagram.com/lollabykm/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.facebook.com/lollabykm" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="https://wa.me/201226396475" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><a href="tel:+201226396475">+20 12 26396475</a></div></div><div class="footer-base"><small>© <span id="year">2026</span> LOLLA HANDMADE · BY KHOLOD MOKHTAR</small><small>MADE WITH ♡</small><a href="#top">BACK TO TOP ↑</a></div></div></footer>
+<div id="overlay" class="overlay" hidden></div>
+<aside id="cartDrawer" class="drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="drawer-top"><div><span class="overline">YOUR LITTLE FINDS</span><h2 id="cartTitle">Your happy bag <span>♡</span></h2></div><button class="drawer-close" data-close aria-label="Close bag">×</button></div><div id="cartItems" class="drawer-items"></div><div class="drawer-bottom"><p>Prices and availability will be confirmed by LOLLA on WhatsApp.</p><button id="sendOrder" class="pill-button pill-button--berry">Send order on WhatsApp <span>↗</span></button></div></aside>
+<div id="productModal" class="product-modal" role="dialog" aria-modal="true" aria-label="Product details" aria-hidden="true"><div class="modal-shell"><button data-close class="modal-close" aria-label="Close product">×</button><div class="modal-photo"><img id="modalImage" src="assets/1551.webp" alt=""></div><div class="modal-info"><span class="overline" id="modalCategory">LOLLA / HANDMADE</span><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="modal-divider"></div><div class="modal-info-row"><span>Handcrafted with love</span><strong>Price on request</strong></div><p class="modal-help">We'll confirm availability, colours and pricing with you on WhatsApp.</p><button id="modalAdd" class="pill-button pill-button--berry">Add to my bag <span>＋</span></button><a id="modalWhatsApp" class="modal-direct" href="https://wa.me/201226396475" target="_blank" rel="noopener noreferrer">Ask about this piece ↗</a></div></div></div>
+<div id="toast" role="status" aria-live="polite" class="toast"></div>
+<a class="floating-chat" aria-label="Ask LOLLA on WhatsApp" href="https://wa.me/201226396475?text=Hi%20LOLLA!%20I%20would%20love%20to%20ask%20about%20your%20handmade%20pieces." target="_blank" rel="noopener noreferrer"><svg width="23" height="23" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.8 11.8 0 0 0 12.08 0C5.51 0 .17 5.33.16 11.89c0 2.1.55 4.15 1.59 5.97L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.69 1.45h.01c6.56 0 11.91-5.34 11.94-11.9a11.8 11.8 0 0 0-3.48-8.42ZM12.06 21.8a9.84 9.84 0 0 1-5.02-1.37l-.36-.21-3.73.98.99-3.64-.23-.37a9.83 9.83 0 0 1-1.51-5.3A9.9 9.9 0 0 1 12.08 2h.01a9.81 9.81 0 0 1 6.99 2.9 9.84 9.84 0 0 1 2.89 7.02 9.91 9.91 0 0 1-9.91 9.88Zm5.44-7.42c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15s-.78.97-.96 1.17c-.17.2-.35.22-.64.08a8.11 8.11 0 0 1-2.41-1.49 9.05 9.05 0 0 1-1.67-2.07c-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.64-.93-2.24-.24-.58-.48-.5-.68-.51h-.58c-.2 0-.53.07-.8.37s-1.05 1.02-1.05 2.49 1.08 2.9 1.23 3.1c.15.2 2.11 3.22 5.11 4.52.71.31 1.27.49 1.71.63.72.23 1.38.2 1.9.12.58-.08 1.77-.73 2.02-1.44.25-.7.25-1.31.18-1.44-.08-.13-.28-.2-.58-.36Z"/></svg><span>Need help?</span></a>
+</body>
+</html>

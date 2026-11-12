@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 240" fill="none">
+ <defs>
+  <linearGradient id="body" x1="215" y1="35" x2="216" y2="220" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#FFF"/>
+   <stop offset=".58" stop-color="#FFF" stop-opacity=".98"/>
+   <stop offset="1" stop-color="#E9DFF4" stop-opacity=".92"/>
+  </linearGradient>
+  <linearGradient id="front" x1="240" y1="130" x2="240" y2="231" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff"/>
+   <stop offset="1" stop-color="#F5ECFA"/>
+  </linearGradient>
+  <filter id="shadow" x="-20%" y="-30%" width="140%" height="180%">
+   <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur"/>
+   <feOffset dy="14" result="off"/>
+   <feComponentTransfer in="off" result="fade"><feFuncA type="linear" slope=".14"/></feComponentTransfer>
+   <feMerge><feMergeNode in="fade"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+ </defs>
+ <g filter="url(#shadow)">
+  <ellipse cx="234" cy="184" rx="191" ry="50" fill="url(#front)"/>
+  <ellipse cx="113" cy="149" rx="77" ry="65" fill="url(#body)"/>
+  <ellipse cx="181" cy="116" rx="94" ry="93" fill="url(#body)"/>
+  <ellipse cx="279" cy="103" rx="101" ry="87" fill="url(#body)"/>
+  <ellipse cx="354" cy="145" rx="80" ry="69" fill="url(#body)"/>
+  <ellipse cx="232" cy="177" rx="172" ry="43" fill="url(#front)"/>
+  <path d="M97 147c-2-37 28-66 60-69" stroke="white" stroke-width="12" stroke-linecap="round" opacity=".7"/>
+  <path d="M235 48c14-9 31-14 47-12" stroke="white" stroke-width="11" stroke-linecap="round" opacity=".9"/>
+ </g>
+</svg>
