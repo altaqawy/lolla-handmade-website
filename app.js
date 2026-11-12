@@ -199,7 +199,7 @@ function initCardReveal(){
 }
 function initTilt(){
   if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const targets=['.product-card','.pattern-card','.hero-product-card','.social-grid a'];
+  const targets=['.product-card','.hero-product-card','.social-grid a'];
   const apply=(el,e,intensity=10)=>{
     const r=el.getBoundingClientRect();
     const rx=((e.clientY-r.top)/r.height-.5)*-intensity;
