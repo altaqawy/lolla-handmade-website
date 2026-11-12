@@ -16,9 +16,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="pattern-polish.css">
+  <link rel="stylesheet" href="lolla-motion-suite.css">
   <script src="app.js" defer></script>
   <script src="clouds-3d.js" defer></script>
   <script src="pattern-polish.js" defer></script>
+  <script src="lolla-motion-suite.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -68,6 +70,15 @@
   </section>
   <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>SOFT GIRL ENERGY ✿ HAPPY LITTLE THINGS ✿ MADE TO BE LOVED ✿ QUILTED WITH CARE ✿ </span><span>SOFT GIRL ENERGY ✿ HAPPY LITTLE THINGS ✿ MADE TO BE LOVED ✿ QUILTED WITH CARE ✿ </span></div></div>
 
+
+  <section class="lolla-flip-interlude" aria-labelledby="lollaFlipHeading">
+    <p class="lolla-interlude-overline">THE LITTLE THINGS ARE THE BIG THINGS ✿</p>
+    <h2 class="lolla-flip-line" id="lollaFlipHeading">Made for
+      <span class="lolla-rotator" role="text" aria-label="daydreamers"><span class="lolla-rotate-front" aria-hidden="true">daydreamers</span><span class="lolla-rotate-next" aria-hidden="true">pretty moments</span></span>
+    </h2>
+    <p class="lolla-interlude-note">Thoughtfully stitched. Joyfully carried. Always a little different ♡</p>
+  </section>
+
   <section class="patterns section-pad" id="patterns">
     <div class="section-head center reveal"><span class="overline">01 / PICK A PERSONALITY</span><h2>Every print has a <em>personality.</em></h2><p>Florals, hearts, berries, and everything in between. Which one feels like you?</p></div>
     <div class="pattern-row" id="patternRow">
@@ -78,6 +89,29 @@
       <button class="pattern-card" data-pattern="gingham" style="--rot:-4deg;--paper:#f6e1d8"><span class="pattern-card__image"><img src="assets/1581.webp" alt="Brown checked gingham quilted pattern"></span><span class="pattern-card__label">Picnic club <b>↗</b></span></button>
     </div>
     <div class="pattern-footer"><span>☁ TIP: CLICK ANY PRINT TO EXPLORE</span><span class="curved-arrow">⤴</span></div>
+  </section>
+
+
+  <section class="lolla-stack-section" id="curated" aria-labelledby="lollaCuratedTitle">
+    <div class="lolla-stack-heading">
+      <span class="overline">THE CURATED LOLLA EDIT ✿</span>
+      <h2 id="lollaCuratedTitle">A little more <em>to love.</em></h2>
+      <p>Three little moods. One lovely world. Scroll through a few of our favourite handmade stories.</p>
+    </div>
+    <div class="lolla-stack-runway">
+      <article class="lolla-stack-card" style="--stack-index:0;--stack-bg:#f6e0e9">
+        <div class="lolla-stack-photo"><img src="assets/1558.webp" alt="LOLLA tulip-print quilted tote and coordinating handmade accessories outdoors" loading="lazy"></div>
+        <div class="lolla-stack-content"><span class="lolla-stack-number">01 / THE SOFT FLORAL EDIT</span><h3>The Tulip Dream</h3><p>Springtime in your everyday bag. Matching quilted pieces with a little pink magic.</p><button type="button" class="lolla-stack-open" data-view="tulip-set">Explore the edit ↗</button></div>
+      </article>
+      <article class="lolla-stack-card" style="--stack-index:1;--stack-bg:#e5e1ef">
+        <div class="lolla-stack-photo"><img src="assets/1555.webp" alt="LOLLA midnight floral tote and its matching handmade makeup pouch" loading="lazy"></div>
+        <div class="lolla-stack-content"><span class="lolla-stack-number">02 / A LITTLE NIGHT MAGIC</span><h3>Midnight Blooms</h3><p>Thoughtful compartments, soft padded details and blooms that go with everything.</p><button type="button" class="lolla-stack-open" data-view="midnight-set">Explore the edit ↗</button></div>
+      </article>
+      <article class="lolla-stack-card" style="--stack-index:2;--stack-bg:#f1e1d9">
+        <div class="lolla-stack-photo"><img src="assets/1581.webp" alt="LOLLA checked gingham quilted tote and pouches on soft white bedding" loading="lazy"></div>
+        <div class="lolla-stack-content"><span class="lolla-stack-number">03 / YOUR DAILY PICNIC</span><h3>Gingham Daydream</h3><p>Cosy checks and playful little things, handcrafted to carry everywhere.</p><button type="button" class="lolla-stack-open" data-view="gingham-set">Explore the edit ↗</button></div>
+      </article>
+    </div>
   </section>
 
   <section class="shop section-pad" id="collection">
@@ -104,6 +138,19 @@
     <div class="container"><div class="section-head center reveal"><span class="overline">04 / YOUR VERY OWN LOLLA EDIT</span><h2>Better <em>together.</em> ♡</h2><p>Choose a print. Pick your matching pieces. Your perfect little duo is just a few taps away.</p></div>
       <div class="set-builder-shell reveal"><div class="set-visual"><div class="set-orbit ring-one"></div><div class="set-orbit ring-two"></div><div class="set-visual__cloud" aria-hidden="true"></div><img id="setImage" src="assets/1558.webp" alt="Tulip collection tote and makeup bags"><div class="floating-set-tag">YOUR LITTLE <b>LOLLA SET</b><small id="setSelectionTag">TOTE + POUCH ♡</small></div><span class="set-visual-star" aria-hidden="true">✳</span></div>
       <div class="set-controls"><div class="set-step">STEP 01 <span>♡</span> THE PRINT</div><h3>Choose your <em>mood</em></h3><div class="set-patterns" id="setPatternOptions"><button class="set-swatch is-selected" data-set="tulip"><span class="swatch-dot swatch-tulip"></span>Tulip dream</button><button class="set-swatch" data-set="midnight"><span class="swatch-dot swatch-midnight"></span>Midnight bloom</button><button class="set-swatch" data-set="hearts"><span class="swatch-dot swatch-hearts"></span>Love notes</button></div><div class="set-divider"></div><div class="set-step">STEP 02 <span>♡</span> THE PIECES</div><div class="set-choice"><label><input type="checkbox" id="setTote" checked><span class="custom-check">✓</span><span>Tote bag</span><span class="choice-doodle">↗</span></label><label><input type="checkbox" id="setPouch" checked><span class="custom-check">✓</span><span>Matching pouch</span><span class="choice-doodle">↗</span></label></div><p class="set-availability">Each piece is made by hand. Availability and prices are confirmed by LOLLA.</p><button id="askForSet" class="pill-button pill-button--berry set-submit">Ask about my set <span>↗</span></button></div></div>
+    </div>
+  </section>
+
+
+  <section class="lolla-expand" aria-label="Handmade craftsmanship spotlight">
+    <div class="lolla-expand-stick">
+      <div class="lolla-expand-media"><img src="assets/1557.webp" alt="LOLLA quilted strawberry and blueberry tote styled with soft accessories" loading="lazy"></div>
+      <div class="lolla-expand-copy">
+        <span class="overline">SMALL DETAILS · BIG LOVE</span>
+        <h2>Pretty on the <em>outside.</em><br>Thoughtful on the inside.</h2>
+        <p>From the first careful stitch to the last little bow — made to be loved, carried and lived in.</p>
+      </div>
+      <span class="lolla-expand-guide" aria-hidden="true">KEEP SCROLLING TO OPEN THE STORY ↓</span>
     </div>
   </section>
 
